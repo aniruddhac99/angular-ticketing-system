@@ -1,0 +1,103 @@
+body{
+    color:#00303f;
+}
+.login-form{
+    margin-top: 20%;
+    margin-bottom: 5%;
+    padding: 5%;
+    box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2), 0 9px 26px 0 rgba(0, 0, 0, 0.19);
+    background: #DEEDF9;
+}
+
+.custnav{
+    background-color: #DEEDF9;
+    color:#00303f;
+}
+.custnav > a{
+    color:#00303f;
+}
+
+fieldset {
+	padding-top:15px;
+	border:2px dashed silver;
+	border-radius:10px;
+    background-color: white;
+}
+legend {
+	float:left;
+	margin-top:-20px;
+}
+
+
+.button-high{
+    background-color: #af473c; 
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.button-submit{
+    background-color: #00303f;
+    color: white; 
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+.submit-button{
+    position: relative;
+    padding-left: 325px;
+
+}
+
+
+.open{
+    color: #1d8da4;
+}
+
+hr{
+    border: dashed;
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 1px;
+    
+}
+
+.enterComment{
+    color: rgb(2, 204, 36);
+}
+
+.ck-editor{
+    width: 300px;
+    height: 300px;
+}
+
+.italic-comment{
+    font-size: x-small;
+    float: right;
+}
+
+.col-sm-9{
+    background-color: white;
+    border: silver;
+    border-radius: 10px;
+}
+
+.fa-chevron-left{
+    color: #00303f;
+}
+
+u{
+    color: #00303f;
+}
+
+.red_text{
+    color: red;
+}
+
+#first_row{
+    font-size: small;
+}
+

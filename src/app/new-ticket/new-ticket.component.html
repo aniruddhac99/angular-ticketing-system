@@ -1,0 +1,113 @@
+<nav class="navbar navbar-expand-lg custnav">
+    <a class="navbar-brand" href="#">
+        <img src="../../assets/assets/applogo.png" class="mr-2" alt="Logo" style="width:40px;"> <b> {{ticketingSystem}}
+        </b>
+    </a>
+    <div class="navbar-nav mr-auto mt-2 mt-lg-0"> </div>
+
+    <span class="border-left border-secondary"> </span>
+
+    <div class="form-inline my-2 my-lg-0 float-right font-weight-bold">
+        <span class="border-left border-secondary">
+            <i class="fa fa-info-circle ml-5 mr-2"></i> {{ salesAndSupport}}
+        </span>
+    </div>
+
+</nav>
+
+<br>
+
+<div class="row">
+
+
+    <div id="first_row" style="position: absolute; left:4px;" class="currentLocation" style="color: #00303f;"> &nbsp;
+        &nbsp; &nbsp; <img src="../../assets/assets/applogo.png" class="mr-2" alt="Logo" style="width:30px;"><b
+            class="red_text">
+            {{previousLocation}} </b> <b> / </b> <b>{{currentLocation }} </b></div>
+
+
+
+
+    <div id="back_text" style="position: absolute; right:1px;" class="back-to-index"> <a href="/user-dashboard"> <i
+                class="fa fa-chevron-left ml-5 mr-2"> <b> Back </b>
+            </i></a> </div>
+
+</div>
+
+<br>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="login-form">
+
+                <img src="../../assets/assets/laptop.png" class="loginimg" alt="Logo"
+                    style="width:140px; height: 150px; position: absolute; margin-left: 170px; margin-top: -90px;">
+
+                <br> <br> <br>
+
+                <h5 class="text-center text-secondary"> <b style="color: #00303F;"> {{ newTicketRequest }} </b> </h5>
+
+                <br>
+
+                <form>
+
+                   <b> {{problemStatement}} </b>  <sup> * </sup> &nbsp; <br>  <textarea rows="4" cols="50">  Cannot login to application.
+                    </textarea> <br>
+
+                    <div class="col-md-12">
+                        <form class="row form">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="selectModule">  <b> {{selectModule}} </b> <sup> * </sup> &nbsp;</label>
+                                    <div class="dropdown"> 
+                                        <button class="dropbtn"> <b style = "float: left;">Application  </b>  <i style="float: right;" class="fa fa-chevron-down"> </i></button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="priority"> <b> {{priority}}  </b><sup> * </sup> </label> <br>
+                                    <div class="dropdown"> 
+                                        <button class="dropbtn"> <b style = "float: left;"> Select </b>  <i style="float: right;" class="fa fa-chevron-down"> </i></button>
+                                        <div class="dropdown-content">
+                                          <a href="#">Link 1</a>
+                                          <a href="#">Link 2</a>
+                                          <a href="#">Link 3</a>
+                                        </div>
+                                      </div>
+                                </div>
+                            </div>
+                            
+                        </form>
+                    </div>
+
+
+                   <b> {{description}}  </b> <sup> * </sup> &nbsp; <div class="ck-editor">
+                        <ckeditor> </ckeditor>
+                    </div><br> <br>
+
+                    <div class="button-group" style="float: right;">
+
+                        <button class="button button-submit"> <i class="fa fa-check">Submit </i>
+                        </button>
+
+                        <button class="button button-reset"><i class="fa fa-refresh">Reset
+                            </i></button>
+
+
+                    </div>
+
+                </form>
+
+                <br>
+            </div>
+        </div>
+    </div>
+</div>

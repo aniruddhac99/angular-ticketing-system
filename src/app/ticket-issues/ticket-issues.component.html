@@ -1,0 +1,122 @@
+<nav class="navbar navbar-expand-lg custnav">
+    <a class="navbar-brand" href="#">
+        <img src="../../assets/assets/applogo.png" class="mr-2" alt="Logo" style="width:40px;"> <b> {{ticketingSystem}}
+        </b>
+    </a>
+    <div class="navbar-nav mr-auto mt-2 mt-lg-0"> </div>
+
+    <span class="border-left border-secondary"> </span>
+
+    <div class="form-inline my-2 my-lg-0 float-right font-weight-bold">
+        <span class="border-left border-secondary">
+            <i class="fa fa-info-circle ml-5 mr-2"></i> {{ salesAndSupport}}
+        </span>
+    </div>
+
+</nav>
+
+<br>
+
+<div class="row">
+
+
+    <div  id="first_row" style="position: absolute; left:4px;" class="currentLocation" style="color: #00303f;"> &nbsp; &nbsp; &nbsp; <img
+            src="../../assets/assets/applogo.png" class="mr-2" alt="Logo" style="width:30px;"><b class="red_text">
+            {{previousLocation}} </b> <b> / </b> <b>{{currentLocation }} </b></div>
+
+
+
+
+    <div id="back_text" style="position: absolute; right:1px;" class="back-to-index"> <a href="/user-dashboard"> <i
+                class="fa fa-chevron-left ml-5 mr-2"> <b> Back </b>
+                 </i></a> </div>
+
+</div>
+
+<br>
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 offset-md-3">
+            <div class="login-form">
+
+                <img src="../../assets/assets/laptop.png" class="loginimg" alt="Logo"
+                    style="width:140px; height: 150px; position: absolute; margin-left: 170px; margin-top: -90px;">
+
+                <br> <br> <br>
+
+                <h5 class="text-center text-secondary"> <b style="color: #00303F;"> {{ organizationTicketIssues }} </b>
+                </h5>
+
+                <form>
+                    <fieldset>
+                        <legend> {{ticketInformation}} </legend>
+                        {{problemStatement}} {{readWrite}}<br>
+                        {{module}} {{springData}} <br>
+                        {{priority}}<button class="button button-high">High</button>
+                        {{status}} <b class="open"> {{open}} </b> <br>
+                        {{description}} {{descriptionValue}} <br>
+                        {{createdDate}} {{createdDateValue}} <br>
+                        {{uploadedDate}} {{uploadedDateValue}} <br>
+                    </fieldset>
+                </form>
+
+                <br>
+                <img src="../../assets/assets/commentsIcon.png" alt="Comments Icon">
+                <br> <br>
+
+                <div class="container">
+
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="namith"> <i class="fa fa-user-circle-o fa-3x"></i> {{namith}}</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <b> {{namithComment}} </b> <br> <i class="italic-comment"> {{namithCommentDetails}} </i>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="pavanK"> <i class="fa fa-user-circle-o fa-3x"></i> {{pavanK}}</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <b> {{pavanKComment}} </b> <br> <i class="italic-comment"> {{pavanKCommentDetails}} </i>
+                            </div>
+                        </div>
+
+                        <br>
+
+                        <div class="row">
+                            <div class="col-sm-3">
+                                <label for="navay"> <i class="fa fa-user-circle-o fa-3x"></i> {{navay}}</label>
+                            </div>
+                            <div class="col-sm-9">
+                                <b> {{navayComment}} </b> <br> <i class="italic-comment"> {{navayCommentDetails}} </i>
+                            </div>
+                        </div>
+
+
+                        <hr>
+
+                        <div class="enterComment">
+                            <b>{{enterComment}} </b>
+                        </div>
+
+
+                        <div class="ck-editor">
+                            <ckeditor> </ckeditor>
+                        </div>
+
+                        <div class="submit-button"><button style="margin-top: -40px;" class="button button-submit"> <i
+                                    class="fa fa-edit"></i> <b> Submit </b></button>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>

@@ -1,0 +1,228 @@
+<nav class="navbar navbar-expand-lg custnav">
+    <a class="navbar-brand" href="#">
+        <img src="../../assets/assets/applogo.png" class="mr-2" alt="Logo" style="width:40px;"> <b> {{ticketingSystem}}
+        </b>
+    </a>
+    <div class="navbar-nav mr-auto mt-2 mt-lg-0"> </div>
+
+    <span class="border-left border-secondary"> </span>
+
+    <div class="form-inline my-2 my-lg-0 float-right font-weight-bold" style="font-size: 20px;">
+        <span class="border-left border-secondary">
+            <i class="fa fa-user-circle ml-5 mr-2"></i> <b> </b> {{ username }}
+        </span>
+    </div>
+
+</nav>
+
+<div class="col-md-12">
+    <form class="row form">
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="priority"> <b class="status"> {{status}} </b> </label> <br>
+                <div class="dropdown">
+
+
+                    <button class="drop-button-1"> <b style="float: left;">All </b> <i style="float: right;"
+                            class="fa fa-chevron-down"> </i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="form-group">
+                <label for="priority"> <b class="module"> {{module}} </b> </label> <br>
+                <div class="dropdown">
+                    <button class="drop-button-2"> <b style="float: left;">Application </b> <i style="float: right;"
+                            class="fa fa-chevron-down"> </i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-md-3">
+            <div class="form-group">
+
+
+                <div class="search-container">
+                    <br>
+
+                    <form>
+                        <input class="search" type="text" placeholder="Search by Module Name" name="search">
+                        <button class="submit" type="submit"><i class="fa fa-search"></i></button>
+                    </form>
+                </div>
+
+
+
+
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="form-group">
+
+                <br>
+
+                <div class="input-group" style="float: right;">
+
+                    <div id="back_text" style="position: absolute; right:1px;" class="back-to-index">
+
+                        <a class="btn btn-lg" style="background-color: #DEEDF9;" href="/new-ticket"><b> <i
+                                    class="fa fa-plus-circle ml-5 mr-2"></i> New Ticket Request </b></a>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </form>
+</div>
+
+
+<hr>
+
+<div class="list-organization-ticket-request"> <b> {{listOrganizationTicketRequest}} </b></div>
+
+<br>
+
+<div class="col-md-12">
+
+    <div class="table-responsive">
+        <table class="table table-hover">
+            <thead class="thead-light">
+                <tr style="color: #00303f;">
+                    <th class="table-text">SL#</th>
+                    <th class="table-text">Problem Statement</th>
+                    <th class="table-text">Module</th>
+                    <th class="table-text">Priority</th>
+                    <th class="table-text">Status</th>
+                    <th class="table-text">Additional</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Read/Write converters are not working</td>
+                    <td>Sprint Data MongoDb</td>
+                    <td><button type="button" class="btn btn-danger">High</button> </td>
+                    <td class="open">Open</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>2</td>
+                    <td>Can't login to application </td>
+                    <td>Application</td>
+                    <td><button type="button" class="btn btn-danger">High</button> </td>
+                    <td class="inProgress">In Progress</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>3</td>
+                    <td>Application is not loading</td>
+                    <td>Application</td>
+                    <td><button type="button" class="btn btn-danger">High</button> </td>
+                    <td class="assigned">Assigned</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>4</td>
+                    <td>Read/Write converters are not working</td>
+                    <td>Application</td>
+                    <td><button type="button" class="btn btn-warning">Medium</button> </td>
+                    <td class="closed">Closed</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>5</td>
+                    <td>Can't login to application</td>
+                    <td>Application</td>
+                    <td><button type="button" class="btn btn-warning">Medium</button> </td>
+                    <td class="assigned">Assigned</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>6</td>
+                    <td>Can't access VPN</td>
+                    <td>Server</td>
+                    <td><button type="button" class="btn btn-info">Low</button> </td>
+                    <td class="open">Open</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>7</td>
+                    <td>Can't login to application</td>
+                    <td>Application</td>
+                    <td><button type="button" class="btn btn-danger">High</button> </td>
+                    <td class="inProgress">In Progress</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>8</td>
+                    <td>Can't access VPN</td>
+                    <td>Server</td>
+                    <td><button type="button" class="btn btn-danger">High</button> </td>
+                    <td class="inProgress">In Progress</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>9</td>
+                    <td>Application is not loading</td>
+                    <td>Application</td>
+                    <td><button type="button" class="btn btn-danger">High</button> </td>
+                    <td class="closed">Closed</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+
+                <tr>
+                    <td>10</td>
+                    <td>Application is not loading</td>
+                    <td>Application</td>
+                    <td><button type="button" class="btn btn-warning">Medium</button> </td>
+                    <td class="closed">Closed</td>
+                    <td><a href="/ticket-issues"> <u>More.....</u></a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <nav aria-label="Page navigation example" style = "float: right;">
+        <ul class="pagination pg-blue">
+          <li  class="page-item">
+            <a class="page-link" aria-label="Previous">
+              <span aria-hidden="true">&laquo;</span>
+              <span class="sr-only">Previous</span>
+            </a>
+          </li>
+          <li class="page-item pagination-text"><a class="page-link pagination-text">1</a></li>
+          
+          <li class="page-item">
+            <a class="page-link" aria-label="Next">
+              <span aria-hidden="true" >&raquo;</span>
+              <span class="sr-only">Next</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+</div>
+
