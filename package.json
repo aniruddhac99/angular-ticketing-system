@@ -23,7 +23,7 @@
     "bootstrap": "^4.4.1",
     "ckeditor4-angular": "^1.0.1",
     "firebase": "^7.6.2",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "popper.js": "^1.16.0",
     "rxjs": "~6.4.0",
     "rxjs-compat": "^6.5.4",
